@@ -1,0 +1,25 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile 'com.squareup.okhttp3:okhttp:3.14.0'
+	compile 'com.google.zxing:core:3.3.3'
+	compile 'com.google.guava:guava:23.6-jre'
+}
+
+test {
+	useJUnitPlatform()
+}
